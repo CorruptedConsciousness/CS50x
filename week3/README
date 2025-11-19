@@ -1,0 +1,136 @@
+# Week 3 – Algorithms and Voting
+
+This folder contains my work for **Week 3 of Harvard’s CS50x**, which focuses on algorithms, efficiency, and applying them to real-world style problems like elections.
+
+Week 3 introduces:
+- searching and sorting algorithms
+- algorithmic complexity (Big O notation)
+- selecting the right algorithm for the job
+- building and reasoning about voting systems in code
+
+---
+
+## 📘 Overview
+
+The key idea of Week 3 is that **how** you solve a problem matters as much as **whether** you solve it.
+
+Two programs can produce the same result, but:
+
+- one may be fast and scalable  
+- one may be painfully slow as input size grows  
+
+Week 3 trains you to think about **performance**, not just correctness.
+
+---
+
+## 🧠 Core Concepts
+
+### 🔍 Searching
+
+- **Linear Search**  
+  – Look through items one by one.  
+  – Time: O(n)
+
+- **Binary Search**  
+  – Divide and conquer on sorted data.  
+  – Repeatedly halve the search space.  
+  – Time: O(log n)
+
+---
+
+### 🔁 Sorting
+
+Common algorithms introduced:
+
+- **Selection Sort** – repeatedly select the smallest element.  
+  - Time: O(n²)
+
+- **Bubble Sort** – repeatedly swap adjacent out-of-order elements.  
+  - Time: O(n²)
+
+- (Optionally) **Merge Sort** – divide list, sort each half, merge.  
+  - Time: O(n log n)
+
+These algorithms show how different strategies scale very differently.
+
+---
+
+### ⏱️ Big O Notation
+
+Used to describe algorithm efficiency:
+
+- O(1) – constant time  
+- O(log n) – logarithmic  
+- O(n) – linear  
+- O(n log n) – “n log n” (good for sorting)  
+- O(n²) – quadratic (slow for large n)
+
+Week 3 trains you to ask:  
+> “What happens when the input grows huge?”
+
+---
+
+## 🗳️ Problem Sets – Voting Systems
+
+### ✔️ `plurality.c`
+
+Implements a simple **plurality election**, where:
+
+- each voter chooses **one** candidate  
+- the candidate with the **most votes** wins  
+- ties are allowed and all winners are printed
+
+Concepts used:
+
+- arrays of structs to represent candidates  
+- updating vote counts  
+- validating votes  
+- scanning for the maximum
+
+---
+
+### ✔️ `runoff.c`
+
+Implements a **preferential (instant-runoff) election**, where:
+
+- each voter ranks candidates in order of preference  
+- rounds are simulated:
+  - count each voter’s top non-eliminated candidate  
+  - if no one has > 50%, eliminate the candidate(s) with fewest votes  
+  - repeat until a candidate has a majority or a tie remains
+
+This problem uses:
+
+- 2D arrays for voter preferences  
+- structs for candidate data  
+- repeated rounds of counting + elimination  
+- loop-based simulation of a real election system
+
+It’s one of the most complex logic problems in the first half of the course.
+
+---
+
+## 📝 Personal Notes
+
+Key ideas I took from Week 3:
+
+- A correct solution can still be “bad” if it’s too slow.  
+- Data structure choice (arrays, structs) and algorithm choice (search/sort) are inseparable.  
+- Real-world systems like elections can be modeled as algorithms.  
+- Breaking down a big simulation (like runoff) into steps makes it manageable:
+  - record preferences  
+  - tabulate votes  
+  - check for winner  
+  - find minimum  
+  - detect tie  
+  - eliminate and repeat
+
+---
+
+## 📂 Planned Files
+
+```text
+week3/
+├── README.md
+├── plurality.c
+└── runoff.c
