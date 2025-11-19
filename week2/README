@@ -1,0 +1,56 @@
+# Week 2 – Arrays, Strings, and Cryptography
+
+This folder contains my work for **Week 2 of Harvard’s CS50x**, where the course transitions from basic C syntax to real data structures and algorithmic thinking.
+
+Week 2 introduces:
+- arrays
+- strings
+- character manipulation
+- ASCII values
+- loop-based transformations
+- the fundamentals of cryptography
+
+---
+
+## 📘 Overview
+
+After Week 1’s introduction to C, Week 2 expands the language with data structures that store *multiple pieces of data at once*. This enables more advanced problem-solving tasks, such as analyzing text and transforming characters.
+
+Core concepts introduced:
+
+### ✔️ Arrays
+Collections of values stored sequentially in memory.
+
+### ✔️ Strings
+Arrays of characters ending in `\0`.
+
+### ✔️ ASCII Table
+Characters expressed as numeric values.
+
+### ✔️ Command-line arguments
+Accessing user input via `argc` and `argv[]`.
+
+### ✔️ Ciphers & Cryptography
+Encrypting plaintext by shifting or substituting characters.
+
+This week feels like the first step into “real programming”: transforming input → producing structured output.
+
+---
+
+## 🧠 What I Learned
+
+### **1. Strings are arrays of chars**
+Understanding this unlocks how loops interact with text.
+
+### **2. Characters are numbers**
+ASCII values make it possible to:
+- shift letters
+- wrap around the alphabet
+- distinguish uppercase/lowercase
+
+### **3. Command-line arguments change how programs receive input**
+`./caesar 5`  
+means that `"5"` is available inside the program through:
+
+```c
+argv[1]
