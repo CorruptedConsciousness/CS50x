@@ -1,0 +1,27 @@
+# Week 1 – C Basics
+
+This folder contains my work for Week 1 of Harvard’s CS50x.
+
+## 🧩 Topics Covered
+- Introduction to C
+- Compiling with `clang`
+- Variables and data types
+- Conditionals (`if`, `else`, `else if`)
+- Loops (`for`, `while`, `do…while`)
+- Basic input/output with `printf` and `get_int`
+
+## 📝 Notes
+This week makes the transition from Scratch to C.  
+Key takeaways for me:
+
+- C is strict — everything needs a type.
+- Off-by-one errors are common, especially in loops.
+- Debugging with `printf` helps understand program flow.
+- Understanding how compilation works (source → machine code) gives insight into how low-level programming actually runs.
+
+## 📂 Files (will be added here as I upload them)
+- `hello.c`
+- `mario.c` (mario-less / mario-more)
+- `cash.c`
+
+I’ll add explanations for each once the files are uploaded.
