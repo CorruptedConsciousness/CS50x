@@ -1,38 +1,54 @@
 #include <stdio.h>
 #include <cs50.h>
-#include <math.h>
 
 int main(void)
 {
-    float dollars;
-
-    // Prompt until we get a valid positive amount of change
+    // Prompt the user for change owed, in cents
+    int cents;
     do
     {
-        dollars = get_float("Change owed: ");
+        cents = get_int("change owed: ");
     }
-    while (dollars < 0);
+    while (cents < 0);
 
-    // Convert dollars to cents (rounding to avoid floating-point issues)
-    int cents = round(dollars * 100);
+    // Calculate how many quarters you should give customer
+    int quarters = 0;
+    while (cents >= 25)
+    {
+        quarters++;
+        cents -= 25;
+    }
 
-    int coins = 0;
+    // Calculate how many dimes you should give customer
+    int dimes = 0;
+    while (cents >= 10)
+    {
+        dimes++;
+        cents -= 10;
+    }
 
-    // Quarters
-    coins += cents / 25;
-    cents %= 25;
+    // Calculate how many nickels you should give customer
+    int nickels = 0;
+    while (cents >= 5)
+    {
+        nickels++;
+        cents -= 5;
+    }
 
-    // Dimes
-    coins += cents / 10;
-    cents %= 10;
+    // Calculate how many pennies you should give customer
+    int pennies = 0;
+    while (cents >= 1)
+    {
+        pennies++;
+        cents -= 1;
+    }
 
-    // Nickels
-    coins += cents / 5;
-    cents %= 5;
+    // Add the number of coins
+    int coins = quarters + dimes + nickels + pennies;
 
-    // Pennies
-    coins += cents;
-
-    // Output total number of coins
+    // Show number of coins
     printf("%i\n", coins);
+
+    return 0;
+
 }
