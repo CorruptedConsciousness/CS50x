@@ -1,33 +1,34 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
+
+void print_row(int row, int bricks);
 
 int main(void)
 {
-    int height;
-
-    // Prompt the user for height until they give a valid value (1–8)
+    int n;
     do
     {
-        height = get_int("Height: ");
+        n = get_int("Height: ");
     }
-    while (height < 1 || height > 8);
+    while (n < 1 || n > 8);
 
-    // Outer loop: each iteration prints one row
-    for (int row = 0; row < height; row++)
+    for (int i = 0; i < n; i++)
     {
-        // Print spaces on the left
-        for (int space = 0; space < height - row - 1; space++)
-        {
-            printf(" ");
-        }
-
-        // Print hashes (#) for the pyramid
-        for (int hash = 0; hash <= row; hash++)
-        {
-            printf("#");
-        }
-
-        // Move to the next line after each row
-        printf("\n");
+        print_row(i + 1, n);
     }
+}
+
+void print_row(int row, int bricks)
+{
+    for (int s = 0; s < bricks - row; s++)
+    {
+        printf(" ");
+    }
+
+    for (int b = 0; b < row; b++)
+    {
+        printf("#");
+    }
+
+    printf("\n");
 }
