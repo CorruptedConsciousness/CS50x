@@ -24,21 +24,20 @@ void print_winner(void);
 
 int main(int argc, string argv[])
 {
-    // Check for correct usage
+    // Check for invalid usage
     if (argc < 2)
     {
-        printf("Usage: ./plurality [candidate ...]\n");
+        printf("Usage: plurality [candidate ...]\n");
         return 1;
     }
 
-    // Populate candidate array
+    // Populate array of candidates
     candidate_count = argc - 1;
     if (candidate_count > MAX)
     {
-        printf("Maximum number of candidates is %i.\n", MAX);
+        printf("Maximum number of candidates is %i\n", MAX);
         return 2;
     }
-
     for (int i = 0; i < candidate_count; i++)
     {
         candidates[i].name = argv[i + 1];
@@ -59,14 +58,14 @@ int main(int argc, string argv[])
         }
     }
 
-    // Display the winner(s)
+    // Display winner of election
     print_winner();
 }
 
-// Update vote totals
+// Update vote totals given a new vote
 bool vote(string name)
 {
-    // Compare input name to each candidate
+    // Find the candidate with this name; if found, increment votes
     for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(candidates[i].name, name) == 0)
@@ -75,16 +74,15 @@ bool vote(string name)
             return true;
         }
     }
-
+    // name not found
     return false;
 }
 
-// Print the winner(s)
+// Print the winner (or winners) of the election
 void print_winner(void)
 {
+    // First find the maximum number of votes
     int max_votes = 0;
-
-    // Find the highest vote count
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes > max_votes)
@@ -93,7 +91,7 @@ void print_winner(void)
         }
     }
 
-    // Print all candidates with max votes (ties allowed)
+    // Then, print everyone who has max_votes
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes == max_votes)
