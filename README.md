@@ -26,7 +26,7 @@ This repository contains:
 | **Week 4** | Memory, pointers, images (filter), recover | 🔜 Next | — |
 | **Week 5** | Data structures | 🔜 Upcoming | — |
 | **Week 6** | Python | 🔜 Upcoming | — |
-| Final Project | Open-ended CS project | 🔜 Future | — |
+| Final Project | Open-ended CS project | 🔜 In Progress | — |
 
 This table automatically shows a reviewer that I’m serious, consistent, and working through the full CS curriculum.
 
