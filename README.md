@@ -98,7 +98,7 @@ This README will update as I continue the course.
 - **VS Code / GitHub Codespaces**  
 - **clang** compiler  
 - **CS50 Library**  
-- **GitHub Pages** (for Scratch game deployment)  
+- **GitHub Pages** (for Scratch game & website deployment)  
 
 ---
 
