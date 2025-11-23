@@ -1,0 +1,10 @@
+sort1 uses: bubble sort
+
+How do you know?: fastest on sorted data and slowest on reversed data
+
+sort2 uses: merge sort
+How do you know?: consistently fast regardless of size or arrangement and scales well
+
+sort3 uses: selection sort
+
+How do you know?:consistent regardless of size or arrangement but does not scale well
