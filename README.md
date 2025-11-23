@@ -22,7 +22,7 @@ This repository contains:
 |------|--------|---------|-------|
 | **Week 1** | C Basics, loops, conditionals, types | ✅ Completed | [week1](week1/) |
 | **Week 2** | Arrays, strings, ASCII, ciphers | ✅ Completed | [week2](week2/) |
-| **Week 3** | Algorithms & Voting Systems | ✅ In Progress | [week3](week3/) |
+| **Week 3** | Algorithms & Voting Systems | ✅ Completed | [week3](week3/) |
 | **Week 4** | Memory, pointers, images (filter), recover | 🔜 Next | — |
 | **Week 5** | Data structures | 🔜 Upcoming | — |
 | **Week 6** | Python | 🔜 Upcoming | — |
