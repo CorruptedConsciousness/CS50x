@@ -20,15 +20,17 @@ This repository contains:
 
 | Week | Topic | Status | Link |
 |------|--------|---------|-------|
+| **Week 0** | Scratch (Visual programming, logic fundamentals) | ✅ Completed | [week0](week0/) |
 | **Week 1** | C Basics, loops, conditionals, types | ✅ Completed | [week1](week1/) |
 | **Week 2** | Arrays, strings, ASCII, ciphers | ✅ Completed | [week2](week2/) |
 | **Week 3** | Algorithms & Voting Systems | ✅ Completed | [week3](week3/) |
 | **Week 4** | Memory, pointers, images (filter), recover | 🔜 In Progress | — |
 | **Week 5** | Data structures | 🔜 Upcoming | — |
 | **Week 6** | Python | 🔜 Upcoming | — |
-| Final Project | Open-ended CS project | 🔜 In Progress | — |
+| **Final Project** | Open-ended CS project | 🔜 In Progress | — |
 
-This table automatically shows a reviewer that I’m serious, consistent, and working through the full CS curriculum.
+This table shows that I’m serious, consistent, and working through the full CS curriculum.
+
 
 ---
 
