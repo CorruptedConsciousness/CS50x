@@ -83,12 +83,17 @@ Every commit reflects real learning.
 
 Next steps in this repository:
 
-- Week 4: memory, pointers, image processing  
-- Week 5: abstract data structures  
-- Week 6: high-level Python solutions  
-- Final CS50 project (likely something Synthrata-related)
+- **Week 4:** memory, pointers, image processing  
+- **Week 5:** abstract data structures  
+- **Week 6:** high-level Python solutions  
+- **Week 7:** SQL and relational databases  
+- **Week 8:** HTML, CSS, and JavaScript  
+- **Week 9:** Flask and full-stack web applications  
+- **Week 10:** cybersecurity  
+- **Final CS50 Project:** likely something Synthrata-related  
 
 This README will update as I continue the course.
+
 
 ---
 
