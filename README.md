@@ -49,7 +49,7 @@ Each folder contains:
 - the **full programs** for each problem set  
 - deep reasoning about algorithms, memory, data representation, and design  
 
-Every commit reflects real learning, not copy/paste solutions.
+Every commit reflects real learning.
 
 ---
 
