@@ -27,7 +27,12 @@ This repository contains:
 | **Week 4** | Memory, pointers, images (filter), recover | 🔜 In Progress | — |
 | **Week 5** | Data structures | 🔜 Upcoming | — |
 | **Week 6** | Python | 🔜 Upcoming | — |
+| **Week 7** | SQL & relational databases | 🔜 Upcoming | — |
+| **Week 8** | HTML, CSS, JavaScript | 🔜 Upcoming | — |
+| **Week 9** | Flask (Python web apps) | 🔜 Upcoming | — |
+| **Week 10** | Cybersecurity | 🔜 Upcoming | — |
 | **Final Project** | Open-ended CS project | 🔜 In Progress | — |
+
 
 This table shows that I’m serious, consistent, and working through the full CS curriculum.
 
