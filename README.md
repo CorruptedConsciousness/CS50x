@@ -9,8 +9,7 @@ This repository contains:
 
 - ✔️ **Full solutions** to weekly problem sets  
 - ✔️ **Well-documented C programs** (following CS50 style and best practices)  
-- ✔️ **Extended READMEs** for each week  
-- ✔️ **Notes written in my own words**  
+- ✔️ **Extended READMEs** for each week   
 - ✔️ **Experiments** and extra practice programs  
 - ✔️ **A clear progression** from basics → algorithms → memory → data structures  
 
