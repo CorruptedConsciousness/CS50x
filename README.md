@@ -97,11 +97,13 @@ This README will update as I continue the course.
 
 ---
 
-# 📎 Quick Navigation
+## 📎 Quick Navigation
 
+- [Week 0](https://corruptedconsciousness.github.io/escape-from-elon/) – Scratch (logic fundamentals)
 - [Week 1](week1/) – C basics  
 - [Week 2](week2/) – Arrays, strings, cryptography  
 - [Week 3](week3/) – Algorithms & Runoff elections  
+ 
 
 ---
 
